@@ -1,14 +1,14 @@
+using UnityEngine;
 using UnityEditor;
 using UnityEditor.Callbacks;
-using UnityEngine;
 
-namespace LombaxGuy.AutoVersion
+namespace LombaxGuy.AVN
 {
     [InitializeOnLoad]
-    public static class AutoVersion
+    public static class AutomaticVersionNumbering
     {
         #region Constants
-        private const string AUTO_VERSION_MENU_ITEM = "Tools/LombaxGuy/Auto Version/Toggle auto versioning";
+        private const string AUTO_VERSION_MENU_ITEM = "Tools/LombaxGuy/Automatic Version Numbering/Toggle";
         private const string PLUGIN_LOG_NAME = "Auto Version";
         private const string IS_ENABLED_KEY = "auto_version:is_enabled";
         #endregion
@@ -18,7 +18,7 @@ namespace LombaxGuy.AutoVersion
         #endregion
 
         #region Constructor
-        static AutoVersion()
+        static AutomaticVersionNumbering()
         {
             // delay the call to setup, otherwise the menu items initial state wont be set
             EditorApplication.delayCall += OnSetup;
