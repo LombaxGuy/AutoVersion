@@ -9,8 +9,8 @@ namespace LombaxGuy.AVN
     {
         #region Constants
         private const string AUTO_VERSION_MENU_ITEM = "Tools/LombaxGuy/Automatic Version Numbering/Toggle";
-        private const string PLUGIN_LOG_NAME = "Auto Version";
-        private const string IS_ENABLED_KEY = "auto_version:is_enabled";
+        private const string PLUGIN_LOG_NAME = "Automatic Version Numbering";
+        private const string IS_ENABLED_KEY = "automatic_version_numbering:is_enabled";
         #endregion
 
         #region Private fields
